@@ -1,7 +1,6 @@
-# kustomize-sample/overlays/staging/replicas.yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: my-app
 spec:
-  replicas: 3
+  replicas: 5
