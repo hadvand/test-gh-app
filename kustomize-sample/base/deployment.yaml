@@ -1,20 +1,6 @@
-# kustomize-sample/base/deployment.yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: my-app
 spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: my-app
-  template:
-    metadata:
-      labels:
-        app: my-app
-    spec:
-      containers:
-      - name: nginx
-        image: nginx:1.27
-        ports:
-        - containerPort: 80
+  replicas: 5
